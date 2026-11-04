@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hungry Bowl</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-sarabun: "Sarabun", sans-serif;
+
+      /* สีประจำร้าน เปลี่ยนทั้งชุดได้จากหน้า "ห้องผสมสี" */
+      --color-brand-50: #fff7ed;
+      --color-brand-100: #ffedd5;
+      --color-brand-200: #fed7aa;
+      --color-brand-600: #ea580c;
+      --color-brand-700: #c2410c;
+      --color-brand-800: #9a3412;
+    }
+  </style>
+</head>
+<body class="font-sarabun bg-brand-50 text-slate-800 leading-relaxed">
+  <!-- ส่วนหัว -->
+  <header class="bg-brand-700 text-white text-center px-4 py-10">
+    <img src="images/logo.png" alt="โลโก้ร้าน Hungry Bowl" class="w-30 h-30 mx-auto object-cover rounded-full border-4 border-white">
+    <h1 class="text-3xl font-bold mt-4">Hungry Bowl</h1>
+    <p class="text-brand-100">อาหารตามสั่งรสมือแม่ หน้าโรงเรียน</p>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-6 space-y-4">
+    <!-- เกี่ยวกับร้าน -->
+    <section class="bg-white border border-brand-200 px-6 py-4 flex items-center gap-4">
+      <img src="images/chef.png" alt="พลอย เชฟประจำร้าน" class="w-24 h-24 rounded-full border-2 border-brand-200">
+      <div>
+        <h2 class="text-xl font-bold text-brand-700 mb-1">เกี่ยวกับร้าน</h2>
+        <p>ร้านเล็ก ๆ ของครอบครัว ทำทีละจานตามสั่ง และมี<span class="bg-green-200 px-1">น้ำพริกสูตรลับ</span>ของคุณยาย</p>
+      </div>
+    </section>
+
+    <!-- เมนูแนะนำ -->
+    <section class="bg-white border border-brand-200 px-6 py-4">
+      <h2 class="text-xl font-bold text-brand-700 mb-4">เมนูแนะนำ</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <article class="bg-white border border-brand-200 p-3 text-center">
+          <img src="images/kaprao.png" alt="ข้าวกะเพราไข่ดาว" class="w-full aspect-square object-cover">
+          <h3 class="font-bold mt-2">ข้าวกะเพราไข่ดาว</h3>
+          <p class="text-brand-700">60 บาท</p>
+        </article>
+        <article class="bg-white border border-brand-200 p-3 text-center">
+          <img src="images/padthai.png" alt="ผัดไทยกุ้งสด" class="w-full aspect-square object-cover">
+          <h3 class="font-bold mt-2">ผัดไทยกุ้งสด</h3>
+          <p class="text-brand-700">70 บาท</p>
+        </article>
+        <article class="bg-white border border-brand-200 p-3 text-center">
+          <img src="images/mango.png" alt="ข้าวเหนียวมะม่วง" class="w-full aspect-square object-cover">
+          <h3 class="font-bold mt-2">ข้าวเหนียวมะม่วง</h3>
+          <p class="text-brand-700">50 บาท</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- เวลาเปิดร้าน -->
+    <section class="bg-white border border-brand-200 px-6 py-4">
+      <h2 class="text-xl font-bold text-brand-700 mb-2">เวลาเปิดร้าน</h2>
+      <ul class="list-disc pl-6">
+        <li>จันทร์ ถึง ศุกร์ 10.00 ถึง 20.00 น.</li>
+        <li>เสาร์ และ อาทิตย์ 9.00 ถึง 21.00 น.</li>
+        <li>หยุดทุกวันพระ</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ส่วนท้าย -->
+  <footer class="text-center text-slate-500 p-4">
+    <p>ร้านสมมติ สร้างด้วย HTML และ Tailwind CSS ในวิชา ว30259 ภาพอาหารเป็นภาพการ์ตูน</p>
+  </footer>
+</body>
+</html>
